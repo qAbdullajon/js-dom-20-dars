@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Products</title>
+</head>
+
+<body class="bg-[#303c4c]">
+  <header class="fixed z-10 top-0 left-0 py-4 bg-[#2b3745] text-white w-full">
+    <nav class="flex justify-between items-center w-[85%] m-auto">
+      <div>
+        <a class="text-2xl font-bold font-sans" href="./index.html">Products</a>
+      </div>
+      <div>
+        <button class="flex text-lg items-center gap-2">
+          <i class="pt-1 fa-solid fa-moon"></i>
+          <span>Dark Mode</span>
+        </button>
+        <button class="hidden">
+          <i class="fas fa-sun"></i>
+          <span>Lite Mode</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+  <main id="main" class="mt-16 py-9 w-[85%] m-auto">
+    <section>
+      <div class="flex justify-between items-center">
+        <div class="relative">
+          <input id="searchProduct" class="bg-[#2b3745] py-2 rounded w-72 pl-12 pr-2 outline-none text-white text-sm"
+            type="text" placeholder="Search for a praduct...">
+          <i class="fa-solid text-white absolute left-4 top-3 fa-magnifying-glass"></i>
+        </div>
+        <div class="flex gap-3">
+          <button id="prev" class="w-10 h-10 rounded-full bg-[#2b3745]"><i
+              class="text-white text-xl fa-solid fa-chevron-left"></i></button>
+          <button id="next" class="w-10 h-10 rounded-full bg-[#2b3745]"><i
+              class="text-white text-xl fa-solid fa-chevron-right"></i></button>
+        </div>
+      </div>
+      <div id="result" class="pt-12 text-white flex flex-wrap gap-x-[2.6%] gap-y-10">
+
+      </div>
+    </section>
+  </main>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="./app.js"></script>
+</body>
+
+</html>
